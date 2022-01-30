@@ -13,3 +13,9 @@ export const changemode = (mode, calcform, timerform) => {
         timerform.style.display = 'none';
     }
 }
+
+export const formatTime = text => `
+<span style="color: blue;">
+    ${'Осталось: ' + text + ' секунд'} 
+</span>
+`;
