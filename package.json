@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "howler": "^2.2.3",
-    "luxon": "^2.3.0"
+    "luxon": "^2.3.0",
+    "mini-css-extract-plugin": "^2.5.3"
   }
 }
