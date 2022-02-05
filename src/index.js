@@ -1,6 +1,7 @@
 import { diffDates, diffToHtml } from "./datecalc.js"; // 1
 import { formatError, changemode, formatTime } from "./utils.js"; // 2
 //import {Howl, Howler} from '../node_modules/howler/dist/howler.core.min.js';
+import {Howl, Howler} from 'howler';
 var sound = new Howl({
     src: ['src/sound.mp3']
 });
