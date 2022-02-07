@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime superapp</title>
+    <!--<script src="./node_modules/howler/dist/howler.js"></script>-->
+    <script src="./dist/main.js" type="module"></script>
+</head>
+
+<body>
+    <form id="selectmode">
+        <p><b>Режим работы приложения?</b></p>
+        <p><input name="mode" type="radio" value="datecalc" checked> Калькулятор дат</p>
+        <p><input name="mode" type="radio" value="timer"> Таймер</p>
+    </form>
+    <form id="datecalc">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate" />
+        </label>
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate" />
+        </label>
+        <button type="submit">Расчитать промежуток</button>
+        <p id="datecalc__result"></p>
+    </form>
+    <form id="timer">
+        <h3>Таймер</h3>
+        <label>
+            <strong>Время отсчета (секкунд):</strong>
+            <input type="number" name="seconds" />
+        </label>
+        <button type="button" name="start">Начать</button>
+        <button type="button" name="finish">Закончить</button>
+        <p id="timer__result"></p>
+    </form>
+</body>
+
+</html>
